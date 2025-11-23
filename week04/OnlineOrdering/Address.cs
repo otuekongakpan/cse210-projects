@@ -17,9 +17,9 @@ public class Address
         _country = country;
     }
 
-    public void GetAddress()
+    public string GetAddress()
     {
-        Console.WriteLine($"{_streetAddress}, {_city}, {_state}, {_country}");
+        return $"{_streetAddress}, {_city}, {_state}, {_country}";
     }
 
     public bool IsLivingInUS()

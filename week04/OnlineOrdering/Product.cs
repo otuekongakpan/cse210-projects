@@ -22,8 +22,18 @@ public class Product
         Console.WriteLine($"Total cost: ${totalCost}");
     }
 
+    public int GetPrice()
+    {
+        return _price;
+    }
+
+    public int GetQuantity()
+    {
+        return _quantity;
+    }
+
     public void GetProduct()
     {
-        Console.WriteLine($"Name: {_name}, Product ID: {_productId}, Price: {_price}, Quantity: {_quantity}");
+        Console.WriteLine($"Product: {_name}, Product ID: {_productId}");
     }
 }

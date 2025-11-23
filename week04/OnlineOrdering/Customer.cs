@@ -21,5 +21,11 @@ public class Customer
         {
             return false;
         }
+
+    }
+    
+    public void GetCustomer()
+    {
+        Console.WriteLine($"Customer: {_customerName}, Address: {_address.GetAddress()}");
     }
 }
