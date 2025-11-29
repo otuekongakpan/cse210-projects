@@ -9,7 +9,7 @@ class Program
         Console.WriteLine(a1.GetSummary());
         Console.WriteLine(a1.GetHomeworkList());
 
-        WritingAssignment a2 = new WritingAssignment("Michelle", "Mild Expectations", "The Beginnning of the End");
+        WritingAssignment a2 = new WritingAssignment("Michelle", "Mild Expectations", "The Beginning of the End");
         Console.WriteLine(a2.GetSummary());
         Console.WriteLine(a2.GetWritingInformation());
     }
