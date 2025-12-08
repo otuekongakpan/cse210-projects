@@ -55,6 +55,7 @@ public class GoalManager
             else if (choice == 4)
             {
                 LoadGoals();
+                ListGoalDetails();
             }
 
             else if (choice == 5)
@@ -241,11 +242,11 @@ public class GoalManager
                 string name = parts[0];
                 string description = parts[1];
                 int points = int.Parse(parts[2]);
-                int target = int.Parse(parts[3]);
-                int bonus = int.Parse(parts[4]);
-                int amountCompleted = int.Parse(parts[5]);
-
-                _goals.Add(new ChecklistGoal(name, description, points, target, bonus, amountCompleted));
+                int amountCompleted = int.Parse(parts[3]);
+                int target = int.Parse(parts[4]);
+                int bonus = int.Parse(parts[5]);
+                
+                _goals.Add(new ChecklistGoal(name, description, points, amountCompleted, target, bonus));
             }
         }
     }
