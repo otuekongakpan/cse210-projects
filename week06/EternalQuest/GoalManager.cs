@@ -242,12 +242,13 @@ public class GoalManager
                 string name = parts[0];
                 string description = parts[1];
                 int points = int.Parse(parts[2]);
-                int amountCompleted = int.Parse(parts[3]);
-                int target = int.Parse(parts[4]);
-                int bonus = int.Parse(parts[5]);
-                
-                _goals.Add(new ChecklistGoal(name, description, points, amountCompleted, target, bonus));
+                int target = int.Parse(parts[3]);
+                int bonus = int.Parse(parts[4]);
+                int amountCompleted = int.Parse(parts[5]);
+
+                _goals.Add(new ChecklistGoal(name, description, points, target, bonus, amountCompleted));
             }
+
         }
     }
 
